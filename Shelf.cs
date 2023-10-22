@@ -12,11 +12,6 @@ namespace ExerciseRefrigerator
         private int _floor;
         private int _freeSpace;
         private int _currentFreeSpace;
-        public List<Item> Items { get; set; }
-        //public Shelf()
-        //{
-        //    Id = UniqIdShelf++;
-        //}
         public Shelf(int floor, int freeSpace)
         {
             Id = UniqIdShelf++;
@@ -82,17 +77,6 @@ namespace ExerciseRefrigerator
                 }
             }
         }
-        //public int GetFreeSpaceRest()
-        //{
-        //    int TakeupPspace = 0;
-
-        //    for (int i = 0; i < Items.Count; i++)
-        //    {
-        //        TakeupPspace += Items[i].Size;
-        //    }
-        //    return FreeSpace - TakeupPspace;
-
-        //}
         public int GetCurrentFreeSpace()
         {
             return CurrentFreeSpace;
